@@ -29,7 +29,61 @@ LATEST_VERSION - [![](https://jitpack.io/v/kamaravichow/iplib-android.svg)](http
 
 ## Usage
 
-YET TO BE IMPLEMENTED
+**Basic Usage**
+
+To get the current IP and location of the user 
+
+```java
+ipLib.ipLookup(new OnIPResponse() {
+            @Override
+            public void onSuccess(IPInfo ipInfo) {
+                // ipInfo object will have all the information
+            }
+
+            @Override
+            public void onError(String message, int errorCode) {
+	    	// if has error this callback triggers
+            }
+        });
+```
+
+Async Method for Lookup
+
+```java
+ipLib.ipLookupAsync(new OnIPResponse() {
+            @Override
+            public void onSuccess(IPInfo ipInfo) {
+                // ipInfo object will have all the information
+            }
+
+            @Override
+            public void onError(String message, int errorCode) {
+	    	// if has error this callback triggers
+            }
+        });
+```
+
+**Custom IP lookup**
+
+Get information of custom public IP
+
+```java
+ipLib.ipLookupWith("IP ADDRESS", new OnIPResponse() {
+            @Override
+            public void onSuccess(IPInfo ipInfo) {
+                                // ipInfo object will have all the information
+            }
+
+            @Override
+            public void onError(String message, int errorCode) {
+			    	// if has error this callback triggers
+            }
+        });
+```
+
+**Advanced Usage**
+
+Refer the sample app for [Advanced Usage]().
 
 
 ## License
