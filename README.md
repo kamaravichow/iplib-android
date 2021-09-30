@@ -29,7 +29,7 @@ LATEST_VERSION - [![](https://jitpack.io/v/kamaravichow/iplib-android.svg)](http
 
 ## Usage
 
-For java documentation [click here](https://github.com/kamaravichow/iplib-android/blob/main/gradlew.bat)
+For java documentation [click here](https://github.com/kamaravichow/iplib-android/blob/main/README-java.md)
 
 **Initialise**
 
