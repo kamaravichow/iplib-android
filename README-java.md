@@ -29,71 +29,69 @@ LATEST_VERSION - [![](https://jitpack.io/v/kamaravichow/iplib-android.svg)](http
 
 ## Usage
 
-For java documentation [click here](https://github.com/kamaravichow/iplib-android/blob/main/gradlew.bat)
-
 **Initialise**
 
-```kotlin
+```java
 
-  ipLib = IPLib.instance!!
+IPLib ipLib = IPLib.getInstance();
 
 ```
 
 **Basic Usage**
 
-To get the current IP and location of the user 
+To get the current IP and location of the user
 
-```kotlin
-
-ipLib.ipLookup(object : OnIPResponse {
-            override fun onSuccess(ipInfo: IPInfo?) {
-                TODO("Not yet implemented")
+```java
+ipLib.ipLookup(new OnIPResponse() {
+            @Override
+            public void onSuccess(IPInfo ipInfo) {
+                // ipInfo object will have all the information
             }
 
-            override fun onError(message: String?, errorCode: Int) {
-                TODO("Not yet implemented")
+            @Override
+            public void onError(String message, int errorCode) {
+	    	// if has error this callback triggers
             }
-        })
-
+        });
 ```
 
-Async Methods run on IO-coroutine
+Async Method for Lookup
 
-```kotlin
-
- ipLib.ipLookupAsync(object : OnIPResponse {
-            override fun onSuccess(ipInfo: IPInfo?) {
-                TODO("Not yet implemented")
+```java
+ipLib.ipLookupAsync(new OnIPResponse() {
+            @Override
+            public void onSuccess(IPInfo ipInfo) {
+                // ipInfo object will have all the information
             }
 
-            override fun onError(message: String?, errorCode: Int) {
-                TODO("Not yet implemented")
+            @Override
+            public void onError(String message, int errorCode) {
+	    	// if has error this callback triggers
             }
-        })
-
+        });
 ```
 
 **Custom IP lookup**
 
 Get information of custom public IP
 
-```kotlin
-
-ipLib.ipLookupWithIpAsync("IP_ADDRESS", object : OnIPResponse {
-            override fun onSuccess(ipInfo: IPInfo?) {
-                TODO("Not yet implemented")
+```java
+ipLib.ipLookupWith("IP ADDRESS", new OnIPResponse() {
+            @Override
+            public void onSuccess(IPInfo ipInfo) {
+                                // ipInfo object will have all the information
             }
 
-            override fun onError(message: String?, errorCode: Int) {
-                TODO("Not yet implemented")
+            @Override
+            public void onError(String message, int errorCode) {
+			    	// if has error this callback triggers
             }
-        })
-
+        });
 ```
 
 **Advanced Usage**
 
-Refer the sample app for [Advanced Usage](https://github.com/kamaravichow/iplib-android/blob/main/app).
+Refer the sample app for [Advanced Usage]().
 
 
 ## License
