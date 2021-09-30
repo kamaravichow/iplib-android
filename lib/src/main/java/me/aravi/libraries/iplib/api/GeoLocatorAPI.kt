@@ -1,17 +1,9 @@
 package me.aravi.libraries.iplib.api
 
-import retrofit2.http.GET
-import me.aravi.libraries.iplib.model.IPInfo
-import me.aravi.libraries.iplib.api.Endpoints
-import me.aravi.libraries.iplib.api.GeoLocatorAPI
-import com.google.gson.Gson
 import com.google.gson.GsonBuilder
+import me.aravi.libraries.iplib.api.GeoLocatorAPI
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import androidx.annotation.Keep
-import me.aravi.libraries.iplib.listeners.OnIPResponse
-import android.os.AsyncTask
-import me.aravi.libraries.iplib.IPLib
 
 class GeoLocatorAPI private constructor() {
     val service: Endpoints?
