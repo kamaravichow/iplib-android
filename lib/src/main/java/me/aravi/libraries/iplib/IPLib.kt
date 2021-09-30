@@ -59,7 +59,7 @@ class IPLib private constructor() {
 
     /**
      * This is same as the other method
-     * this happens in async thread
+     * this happens in IO CoroutineScope
      *
      * @param listener
      */
@@ -70,6 +70,8 @@ class IPLib private constructor() {
     }
 
     /**
+     * Gets ip info
+     * this happens in IO CoroutineScope
      * @param ipAddress
      * @param listener
      */
