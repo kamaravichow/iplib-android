@@ -29,6 +29,14 @@ LATEST_VERSION - [![](https://jitpack.io/v/kamaravichow/iplib-android.svg)](http
 
 ## Usage
 
+**Initialise**
+
+```java
+
+IPLib ipLib = IPLib.getInstance();
+
+```
+
 **Basic Usage**
 
 To get the current IP and location of the user 
