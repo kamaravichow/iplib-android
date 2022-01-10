@@ -2,6 +2,8 @@
 
 Public IP lookup library for android
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-IP%20Lib%20Android-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/8332)
+
 
 ## Installation
 
