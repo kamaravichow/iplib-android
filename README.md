@@ -2,6 +2,7 @@
 
 Public IP lookup library for android
 
+[![](https://jitpack.io/v/kamaravichow/iplib-android.svg)](https://jitpack.io/#kamaravichow/iplib-android)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-IP%20Lib%20Android-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/8332)
 
 
